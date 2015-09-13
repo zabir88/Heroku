@@ -2,7 +2,6 @@ import os
 from flask import Flask, render_template, request, redirect
 from twilio.rest import TwilioRestClient 
 
-
 app = Flask(__name__) # Creating the app instance
 
 #Credentials from the twilio account to access the api and also my twilio number 
@@ -15,7 +14,7 @@ client = TwilioRestClient(account_sid, account_token)
 def index():
     return render_template('form.html')
   
-@app.route("/submit-form/", methods = ['POST']) 
+@app.route("/submit/", methods = ['POST']) 
 def submit_number():
     number = request.form['number']
     user_number = "+1"+number # Switch to your country code of choice
@@ -26,8 +25,7 @@ def submit_number():
 def list_messages():
     return render_template('messages.html')
     
-    
 if __name__ == '__main__': # If we're executing this app from the command line
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port,debug=True)
     

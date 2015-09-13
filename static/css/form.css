@@ -2,75 +2,94 @@
 
 /* ---------- Form Styles --------- */
 
+/* Background Image*/
+body {
+    background-image: url("twilioapp_background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Headline styling*/
+.headline h1{
+    color: #353B43;
+    font-size: 60px;
+    padding-top: 50px;
+    padding-left: 30px
+}
+/*Credit part */
+.credit p{
+    padding-top:110px;
+}
 /* Form Color Styles */
 #form {
-	background-color: #eeeeee;
+	background-color:rgba(200,200,200,0.5);
 }
 
 /* Form Sizing Styles */
 #form {
 	width: 50%;
-	margin: 3em auto;
-	padding: 1.75em;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px 40px;
 }
 
 /* Form Font Styling */
 #form h2 {
 	font-family: 'Lucida Grande', Tahoma, sans-serif;
-	font-size: 1.25em;
+	font-size: 2.5 em;
 }
 
 #form p {
 	font-family: 'Lucida Grande', Tahoma, sans-serif;
-	font-size: 1em;
+	font-size: 1.5 em;
 }
 
 #form label {
 	font-family: 'Lucida Grande', Tahoma, sans-serif;
-	font-size: .85em;
+	font-size: 2 em;
 }
 
 /* Border and Shadow Styles */
 #form {
 	border: .20em solid #888;
-	border-radius: 1em;
-	box-shadow: 0em .25em 1em #666;
+	border-radius: 1 em;
+	box-shadow: 10px 10px 25px #182828;
 }
 
 /* ---------- Input Styles --------- */
 
 /* Input Background Color */
 input[type="submit"] {
-	background-color: #aa0000;
+	background-color: #58626F;
 }
 
 /* Input Font Styles */
 input[type="submit"] {
 	font-family: Helvetica, sans-serif;
-	font-size: .75em;
+	font-size: 1em;
 }
 
 /* Input Submit Margin and Padding */
 input[type="submit"] {
-	margin-right: 2em;
-	padding: .20em .4em;
-	color: #fff;
+	margin-left: auto;
+    padding: 10px 10px;
+	color:#FFFFFF;
 }
 
 /* Input Text Width, Margin, and Padding */
 input[type="text"] {
-	width: 12em;
-	margin: .5em 0;
-	padding: .15em 0;
+	width: 20%;
+	margin: auto 0;
+	padding: 5px 0;
 }
 
 /* Border Styles */
 input[type="submit"] {
-border: .10em solid #600;
+border: .10em solid #464E59;
 border-radius: .4em;
-box-shadow: 0 .15em .4em #666;
+box-shadow: 0 .15em .4em #58626F;
 }
 
 input[type="submit"]:hover {
-	background-color: #600;
+	background-color:#23272C;
 }

@@ -4,19 +4,25 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../static/css/form.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="../static/css/printstyles.css" media="print"/>
-  <title>One Click Message: An annoying Yo clone by Lauren Orsini</title>
+  <title>Instant SMS App</title>
 </head>
 <body>
+  <div class="headline">
+    <p><h1 align="center"> Text from your computer and stay connected.</h1></p>
+  </div>
   <div id="form">
-    <form method="post" action="/submit-form/"> <!--telling the form where to send user input-->
-    <h2>My One Click Messaging App</h2>
-
-    <label>Friend's Phone Number (Please use no characters): </label>
+    <form method="post" action="/submit/"> <!--telling the form where to send user input-->
+    <h2>Send free SMS</h2>
+    <label>Enter Cell Phone Number (No characters): </label>
     <input type="text" name="number" size="40" />
-
     <p><input type="submit" value="Send Message"  /></p>
     </form>
+  </div>
+  <div class= "credit">
+    <p>
+        <h3 align="center">By: Zabir Hossain</h3>
+        <h3 align="center">Powered by Twilio</h3>
+    </p>
   </div>
 </body>
 </html>
