@@ -5,9 +5,9 @@ from twilio.rest import TwilioRestClient
 app = Flask(__name__) # Creating the app instance
 
 #Credentials from the twilio account to access the api and also my twilio number 
-account_sid= 'AC5a5875ff049577324bde1a9af5d6b87c'
-account_token= '82284d75af39c723ebfc7bb97d31d0dc'
-twilio_number = '+13478460702' # My Twilio number 
+account_sid= '###################################'
+account_token= '################################'
+twilio_number = '########' # My Twilio number 
 client = TwilioRestClient(account_sid, account_token)
 
 @app.route('/') # When you go to top page of app, this is what it will execute
